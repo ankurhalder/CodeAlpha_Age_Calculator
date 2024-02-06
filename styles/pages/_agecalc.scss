@@ -14,6 +14,7 @@
     letter-spacing: 4px;
   }
   .container {
+    @include flex-container(column, nowrap, flex-start, center);
     max-width: 450px;
     width: 100%;
     max-height: 600px;
@@ -88,8 +89,9 @@
     }
     .input-container {
       margin: 5% 0 0 0;
+      text-align: center;
       .dob {
-        font-family: var(--font-tektur);
+        font-family: var(--font-roboto);
         font-size: var(--font-11);
         color: var(--black);
         letter-spacing: 3px;
@@ -98,18 +100,21 @@
 
       input[type="date"] {
         font-family: var(--font-tektur);
-        font-size: var(--font-11);
+        font-size: var(--font-12);
         color: var(--black);
         letter-spacing: 3px;
         font-weight: 400;
-        margin: 2% 0 0 0;
+        margin: 5% 0 0 0;
         width: 100%;
-        padding: 15px;
+        padding: 15px 30px;
         border: none;
         border-radius: 8px;
         background-color: #f2f2f2;
-        font-size: 16px;
         box-sizing: border-box;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        overflow: hidden;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out 0.1s;
         &:hover {
           backdrop-filter: blur(-10px);
@@ -119,12 +124,14 @@
       }
     }
     button {
+      width: 100%;
       font-family: var(--font-elianto);
       font-size: var(--font-11);
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--black);
       position: relative;
+      margin: 10% 0 0 0;
       z-index: 1;
       padding: 15px 30px;
       background: linear-gradient(to right, var(--blue-11), var(--blue-12));
