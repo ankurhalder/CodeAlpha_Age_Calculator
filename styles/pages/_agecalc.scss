@@ -1,13 +1,20 @@
 .age-calculator-body {
   background: linear-gradient(to right, #dd5e89, #f7bb97);
-  @include flex-container(row, nowrap, center, center);
+  @include flex-container(column, nowrap, space-between, center);
+
+  .heading {
+    color: var(--black);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
   .container {
     position: relative;
-    max-width: 400px;
+    max-width: 600px;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--white-shadow-0);
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px var(--black-shadow-light-1);
     animation: fadeInUp 1s ease forwards;
 
     &::before {
@@ -31,6 +38,13 @@
       background-color: #ff7e5f;
       border-radius: 0 0 20px 20px;
     }
+    &__heading {
+      color: red;
+      margin-bottom: 20px;
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
   }
 
   @keyframes fadeInUp {
@@ -44,9 +58,9 @@
     }
   }
 
-  h1 {
-    text-align: center;
-    color: #333;
+  &__heading {
+    // text-align: center;
+    color: red;
     margin-bottom: 20px;
     font-size: 28px;
     text-transform: uppercase;
