@@ -12,12 +12,22 @@
     font-family: var(--font-blackpast);
     font-size: var(--font-6);
     letter-spacing: 4px;
+    @media (max-width: $breakpoint-desktop-wide) {
+    }
+    @media (max-width: $breakpoint-desktop) {
+    }
+    @media (max-width: $breakpoint-large-tablet) {
+    }
+    @media (max-width: $breakpoint-tablet) {
+    }
+    @media (max-width: $breakpoint-phone) {
+    }
   }
   .container {
     @include flex-container(column, nowrap, flex-start, center);
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
-    max-height: 600px;
+    max-height: 500px;
     height: 100%;
     margin: 5% 0 0 0;
     padding: 30px;
@@ -67,6 +77,16 @@
       color: var(--black);
       letter-spacing: 3px;
       margin: 1% 0 5% 0;
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
       &::before {
         content: "";
         display: block;
@@ -90,12 +110,32 @@
     .input-container {
       margin: 5% 0 0 0;
       text-align: center;
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
       .dob {
         font-family: var(--font-roboto);
         font-size: var(--font-11);
         color: var(--black);
         letter-spacing: 3px;
         font-weight: 500;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
       }
 
       input[type="date"] {
@@ -116,6 +156,16 @@
         cursor: pointer;
         overflow: hidden;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out 0.1s;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
         &:hover {
           backdrop-filter: blur(-10px);
           transform: translate(-1px, 2px);
@@ -141,6 +191,16 @@
       overflow: hidden;
       transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
         background 0.4s ease-in-out;
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
       @media (max-width: $breakpoint-desktop-wide) {
       }
       @media (max-width: $breakpoint-desktop) {
@@ -206,11 +266,22 @@
       }
     }
     .result-container {
+      width: 100%;
       margin-top: 20px;
       padding: 20px;
       border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      @media (max-width: $breakpoint-desktop-wide) {
+      }
+      @media (max-width: $breakpoint-desktop) {
+      }
+      @media (max-width: $breakpoint-large-tablet) {
+      }
+      @media (max-width: $breakpoint-tablet) {
+      }
+      @media (max-width: $breakpoint-phone) {
+      }
     }
   }
 
