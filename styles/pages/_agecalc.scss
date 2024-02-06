@@ -100,26 +100,37 @@
   }
 
   .input-container {
-    margin-bottom: 20px;
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-      color: #555;
-      font-size: 16px;
+    margin: 5% 0 0 0;
+    .dob {
+      font-family: var(--font-tektur);
+      font-size: var(--font-11);
+      color: var(--black);
+      letter-spacing: 3px;
+      font-weight: 500;
     }
 
     input[type="date"] {
+      font-family: var(--font-tektur);
+      font-size: var(--font-11);
+      color: var(--black);
+      letter-spacing: 3px;
+      font-weight: 400;
+      margin: 2% 0 0 0;
       width: 100%;
-      padding: 12px;
+      padding: 15px;
       border: none;
       border-radius: 8px;
       background-color: #f2f2f2;
       font-size: 16px;
       box-sizing: border-box;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out 0.1s;
+      &:hover {
+        backdrop-filter: blur(-10px);
+        transform: translate(-1px, 2px);
+        box-shadow: var(--black-shadow-light-1) 0px 16px 20px -5px;
+      }
     }
   }
-
   button {
     display: block;
     width: 100%;
