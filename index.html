@@ -148,18 +148,18 @@
     <footer>
       <p class="footer">&copy; 2024 Ankur Halder. All rights reserved.</p>
     </footer>
-  </body>
-  <script>
-    window.isProduction = true;
-    const script = document.createElement("script");
-    script.src = "./script.js";
+    <script>
+      window.isProduction = true;
+      const script = document.createElement("script");
+      script.src = "./script.js";
 
-    if (!window.isProduction) {
-      script.type = "text/javascript";
-    } else {
-      script.type = "module";
-    }
-    document.body.appendChild(script);
-  </script>
-  <script src="./script.js"></script>
+      if (!window.isProduction) {
+        script.type = "text/javascript";
+      } else {
+        script.type = "module";
+      }
+      document.body.appendChild(script);
+    </script>
+    <script src="./script.js"></script>
+  </body>
 </html>
