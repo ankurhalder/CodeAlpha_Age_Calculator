@@ -1,13 +1,6 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.age-calculator-body {
   background: linear-gradient(to right, #dd5e89, #f7bb97);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
+  @include flex-container(row, nowrap, center, center);
   .container {
     position: relative;
     max-width: 400px;
