@@ -13,12 +13,17 @@
     font-size: var(--font-6);
     letter-spacing: 4px;
     @media (max-width: $breakpoint-desktop-wide) {
+      font-size: var(--font-7);
     }
     @media (max-width: $breakpoint-desktop) {
+      font-size: var(--font-8);
     }
     @media (max-width: $breakpoint-large-tablet) {
+      font-size: var(--font-9);
     }
     @media (max-width: $breakpoint-tablet) {
+      font-size: var(--font-6);
+      text-align: center;
     }
     @media (max-width: $breakpoint-phone) {
     }
@@ -39,13 +44,11 @@
     transition: background 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     animation: fadeInUp 1s ease-in-out;
     @media (max-width: $breakpoint-desktop-wide) {
-      margin: 8% 0 0 0;
       max-width: 400px;
       max-height: 550px;
       padding: 25px;
     }
     @media (max-width: $breakpoint-desktop) {
-      margin: 12% 0 0 0;
       max-width: 370px;
       max-height: 510px;
       padding: 20px;
@@ -57,12 +60,13 @@
     }
     @media (max-width: $breakpoint-tablet) {
       padding: 20px;
-      max-height: 530px;
+      max-height: 500px;
     }
     @media (max-width: $breakpoint-phone) {
       max-width: 350px;
       max-height: 500px;
       padding: 15px;
+      text-align: center;
     }
     &:hover {
       background: rgba(255, 255, 255, 0.15);
@@ -83,6 +87,7 @@
       @media (max-width: $breakpoint-large-tablet) {
       }
       @media (max-width: $breakpoint-tablet) {
+        font-size: var(--font-5);
       }
       @media (max-width: $breakpoint-phone) {
       }
@@ -132,6 +137,7 @@
         @media (max-width: $breakpoint-large-tablet) {
         }
         @media (max-width: $breakpoint-tablet) {
+          font-size: var(--font-8);
         }
         @media (max-width: $breakpoint-phone) {
         }
@@ -162,6 +168,7 @@
         @media (max-width: $breakpoint-large-tablet) {
         }
         @media (max-width: $breakpoint-tablet) {
+          font-size: var(--font-10);
         }
         @media (max-width: $breakpoint-phone) {
         }
@@ -197,17 +204,7 @@
       @media (max-width: $breakpoint-large-tablet) {
       }
       @media (max-width: $breakpoint-tablet) {
-      }
-      @media (max-width: $breakpoint-phone) {
-      }
-      @media (max-width: $breakpoint-desktop-wide) {
-      }
-      @media (max-width: $breakpoint-desktop) {
-      }
-      @media (max-width: $breakpoint-large-tablet) {
-      }
-      @media (max-width: $breakpoint-tablet) {
-        font-size: var(--font-9);
+        font-size: var(--font-10);
       }
       @media (max-width: $breakpoint-phone) {
       }
@@ -283,6 +280,7 @@
       @media (max-width: $breakpoint-large-tablet) {
       }
       @media (max-width: $breakpoint-tablet) {
+        font-size: var(--font-10);
       }
       @media (max-width: $breakpoint-phone) {
       }
@@ -297,6 +295,7 @@
       letter-spacing: 3px;
       font-weight: 500;
       margin: 5% 0 0 0;
+
       @media (max-width: $breakpoint-desktop-wide) {
       }
       @media (max-width: $breakpoint-desktop) {
@@ -304,15 +303,19 @@
       @media (max-width: $breakpoint-large-tablet) {
       }
       @media (max-width: $breakpoint-tablet) {
+        font-size: var(--font-10);
       }
       @media (max-width: $breakpoint-phone) {
       }
     }
     a {
+      overflow-wrap: break-word;
+      word-break: break-all;
       text-decoration: underline;
       color: var(--blue-2);
       font-weight: 600;
       transition: color 0.4s ease-in-out;
+
       &:hover {
         color: var(--yellow-10);
       }
@@ -350,6 +353,7 @@
     @media (max-width: $breakpoint-large-tablet) {
     }
     @media (max-width: $breakpoint-tablet) {
+      font-size: var(--font-9);
     }
     @media (max-width: $breakpoint-phone) {
     }
