@@ -148,6 +148,18 @@
     <footer>
       <p class="footer">&copy; 2024 Ankur Halder. All rights reserved.</p>
     </footer>
-    <script type="module" src="./script.js"></script>
   </body>
+  <script src="./script.js"></script>
+  <script>
+    if (process.env.NODE_ENV === "production") {
+      const scriptTag = document.createElement("script");
+      scriptTag.type = "module";
+      scriptTag.src = "./script.js";
+      document.body.appendChild(scriptTag);
+    } else {
+      const scriptTag = document.createElement("script");
+      scriptTag.src = "./script.js";
+      document.body.appendChild(scriptTag);
+    }
+  </script>
 </html>
