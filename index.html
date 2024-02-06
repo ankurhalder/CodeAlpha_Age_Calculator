@@ -153,13 +153,12 @@
       const script = document.createElement("script");
       script.src = "./script.js";
 
-      if (!window.isProduction) {
+      if (window.isProduction) {
         script.type = "text/javascript";
       } else {
         script.type = "module";
       }
       document.body.appendChild(script);
     </script>
-    <script src="./script.js"></script>
   </body>
 </html>
