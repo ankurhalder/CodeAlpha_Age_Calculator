@@ -153,9 +153,9 @@
       script.src = "./script.js";
 
       if (window.isProduction) {
-        script.type = "module";
-      } else {
         script.type = "text/javascript";
+      } else {
+        script.type = "module";
       }
       document.body.appendChild(script);
     </script>
